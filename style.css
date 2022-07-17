@@ -554,7 +554,7 @@ span.visually-hidden {
 .shop {
 	width: 1200px;
 	padding: 0 15px;
-	margin: 0 auto 60px auto;
+	margin: 0 auto calc(60px + 25px) auto;
 }
 
 .shop__products {
@@ -568,7 +568,7 @@ span.visually-hidden {
 	flex: 1;
 	position: relative;
 }
-   
+
 .product01__img {
 	background-image: url('images/shop-item-desk1.jpg');
 	width: 100%;
@@ -600,12 +600,10 @@ span.visually-hidden {
 }
 
 .product__title {
-	padding: 30px 0px;
+	padding: 25px 0 0 0;
 	outline: solid 3px rgba(181, 159, 91, 0.6);
-	outline-offset: 30px;
+	outline-offset: 25px;
 	z-index: -1;
-	margin-left: 5px;
-	margin-right: 5px;
 }
 
 .product__header {
@@ -618,6 +616,7 @@ span.visually-hidden {
 
 .product__text {
 	margin-top: 10px;
+	margin-bottom: 25px;	
 	font-size: 15px;
 	line-height: 22px;
 	color: #0f0d0e;
@@ -630,6 +629,10 @@ span.visually-hidden {
 .product__text a:hover {
 	text-decoration: underline;
 	color: #b59f5b;
+}
+
+.price {
+	margin: auto 0;
 }
 
 .old-price {
@@ -646,7 +649,6 @@ span.visually-hidden {
 	color: #0f0d0e;
 	font-weight: bold;
 }
-
 
 .shop-form {
 	display: flex;
@@ -692,7 +694,7 @@ span.visually-hidden {
 }
    
 .social ul>li {
-	margin-right: 78px;
+	margin-right: 45px;
 	display: inline-block;
 }
    
@@ -711,11 +713,11 @@ span.visually-hidden {
 }
    
 .twitter {
-	background-image: url("svg/004-twitter.svg");
+	background-image: url("svg/001-dribbble.svg");
 }
    
 .pinterest {
-	background-image: url("svg/001-pinterest.svg");
+	background-image: url("svg/002-pinterest.svg");
 }
    
 .tumblr {
