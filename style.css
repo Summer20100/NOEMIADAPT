@@ -567,6 +567,8 @@ span.visually-hidden {
 .shop__product {
 	flex: 1;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .product01__img {
@@ -596,14 +598,14 @@ span.visually-hidden {
 	background-size: cover;
 	background-position: center;
 	position: relative;
-	z-index: 0;
 }
 
 .product__title {
 	padding: 25px 0 0 0;
 	outline: solid 3px rgba(181, 159, 91, 0.6);
 	outline-offset: 25px;
-	z-index: -1;
+	flex-grow: 1;
+	z-index: 1;
 }
 
 .product__header {
@@ -702,7 +704,7 @@ span.visually-hidden {
 	margin-right: 0;
 }
    
-.twitter,
+.dribbble,
 .pinterest,
 .tumblr {
 	width: 20px;
@@ -712,7 +714,7 @@ span.visually-hidden {
 	background-size: contain;
 }
    
-.twitter {
+.dribbble {
 	background-image: url("svg/001-dribbble.svg");
 }
    
@@ -735,4 +737,3 @@ span.visually-hidden {
 .copyrights a {
 	color: #999999;
 }
-   
