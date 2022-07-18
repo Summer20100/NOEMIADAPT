@@ -103,7 +103,7 @@ span.visually-hidden {
 	margin-left: 31px;
 }
    
-   .menu ul>li:hover {
+.menu ul>li:hover {
 	text-decoration: underline;
 }
    
@@ -164,7 +164,7 @@ span.visually-hidden {
 .trend__title h3 a {
 	display: block;
 	font-size: 20px;
-	line-height: 24px;
+	line-height: 29px;
 	font-weight: bold;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -736,4 +736,8 @@ span.visually-hidden {
    
 .copyrights a {
 	color: #999999;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+	
 }
