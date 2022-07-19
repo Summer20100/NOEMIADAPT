@@ -1,0 +1,275 @@
+@media (min-width: 641px) and (max-width: 1199px) {
+  
+	body {
+		font-family: OpenSans, sans-serif;
+	}
+	   
+	/*______________________________________*/
+	/* HEADER */
+  
+  .header-banner {
+	  background-image: url('../images/banner-bg-tablet.jpg');
+	background-position: center;
+  }
+	 
+  .header-logo {
+	  width: 158px;
+  }
+	.header-menu {
+	  padding: 0 35px;
+	}
+	 
+  .intro {
+	  font-size: 40px;
+	  line-height: 55px;
+	max-width: 650px;
+  } 
+  
+	.menu {
+	  width: 23px;
+	  position: relative;
+	} 
+	
+	.menu__box {
+	  display: none;
+	}
+	
+  .menu > span,
+  .menu > span::before,
+  .menu > span::after {
+	display: block;
+	width: 23px;
+	height: 3px;
+	background-color: #ffffff;
+  }
+	
+	.menu > span::before {
+	content: '';
+	top: 10px;
+	position: absolute;
+  }
+	
+  .menu > span::after {
+	content: '';
+	top: -10px;
+	position: absolute;
+  }
+   
+	/*______________________________________*/
+	/* TRENDS */
+	
+	.trends {
+		min-width: 1200px;
+		margin-top: 50px;
+	}
+	
+	.trend__content {
+		position: relative;
+		min-width: 49%;
+		display: flex;
+	  flex: 1;
+		align-items: flex-end;
+	  height: 247px;
+	}
+	
+	.trend__title h3 a {
+		font-size: 17px;
+		line-height: 22px;
+	}
+	
+	.trend__title-category ul>li {
+		font-size: 14px;
+		line-height: 37px;
+	}
+	
+	/*______________________________________*/
+	/* CONTENT */
+	   
+	.content {
+		min-width: 641px;
+		display: flex;
+		margin: 0 auto;
+		padding: 50px 35px;
+	}
+	   
+	/* CONTENT.MAIN */
+	   
+	.main {
+		margin-right: 35px;
+	  width: 392px;
+	}
+	   
+	.article {
+	  flex-direction: column;
+		margin-bottom: 40px;
+	}
+  
+	.article::after {
+	  content: '';
+	  margin-top: 20px; 
+	  width: 100%;
+	  height: 3px;
+	  background-color: #eeeeee;
+	}
+  
+	.article:last-child ::after{
+	  display: none;
+	}
+	   
+	.article-img__banner {
+		width: 392px;
+	}
+	   
+	.article-content__category ul>li {
+		font-size: 14px;
+	  line-height: 40px; 
+	}
+	   
+	.article-content h3 a {
+	  font-size: 17px;
+	  line-height: 22px;
+	}
+  
+	/*______________________________________*/
+	/* SHOP */
+	
+	.shop {
+		width: 1200px;
+		padding: 0 15px;
+		margin: 0 auto calc(50px + 25px) auto;
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+	
+	.shop__products {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 25px;
+		gap: 100px;
+	}
+	
+	.shop__product {
+		flex: 1;
+	  width: 292px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.product01__img {
+		background-image: url('/images/shop-item-tablet1.jpg');
+		width: 100%;
+		height: 204px;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		z-index: 0;
+	}
+	
+	.product02__img {
+		background-image: url('/images/shop-item-tablet2.jpg');
+		width: 100%;
+		height: 204px;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		z-index: 0;
+	}
+	
+	.product03__img {
+		background-image: url('/images/shop-item-tablet3.jpg');
+		width: 100%;
+		height: 204px;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+	}
+	
+	.product__title {
+		padding: 25px 0 0 0;
+		outline: solid 3px rgba(181, 159, 91, 0.6);
+		outline-offset: 25px;
+		flex-grow: 1;
+		z-index: 1;
+	}
+	
+	.product__header {
+		text-transform: uppercase;
+		font-size: 20px;
+		line-height: 24px;
+		color: #0f0d0e;
+		font-weight: bold;
+	}
+	
+	.product__text {
+		margin-top: 10px;
+		margin-bottom: 25px;	
+		font-size: 15px;
+		line-height: 22px;
+		color: #0f0d0e;
+	}
+	
+	.product__text a {
+		color: #b59f5b;
+	}
+	
+	.product__text a:hover {
+		text-decoration: underline;
+		color: #b59f5b;
+	}
+	
+	.price {
+		margin: auto 0;
+	}
+	
+	.old-price {
+		font-size: 14px;
+		line-height: 24px;
+		text-decoration: line-through;
+		color: #0f0d0e;
+		font-weight: bold;
+	}
+	
+	.new-price {
+		font-size: 20px;
+		line-height: 24px;
+		color: #0f0d0e;
+		font-weight: bold;
+	}
+	
+	.shop-form {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.shop-button {
+		width: 140px;
+		height: 48px;
+		background-color: #b59f5b;
+		border: none;
+		font-size: 14px;
+		line-height: 40px;
+		color: #ffffff;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+	.price p {
+		margin: 0;
+	}
+	   
+	.shop-button:hover {
+		background-color: #323232;
+	}
+	
+	/*______________________________________*/
+	/* FOOOTER */
+	   
+	.footer {
+		width: 1200px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+	 
+	
+  }
