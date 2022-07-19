@@ -137,8 +137,6 @@
 		width: 1200px;
 		padding: 0 15px;
 		margin: 0 auto calc(50px + 25px) auto;
-	  display: flex;
-	  flex-wrap: wrap;
 	}
 	
 	.shop__products {
@@ -157,7 +155,7 @@
 	}
 	
 	.product01__img {
-		background-image: url('/images/shop-item-tablet1.jpg');
+		background-image: url('../images/shop-item-tablet1.jpg');
 		width: 100%;
 		height: 204px;
 		background-size: cover;
@@ -167,7 +165,7 @@
 	}
 	
 	.product02__img {
-		background-image: url('/images/shop-item-tablet2.jpg');
+		background-image: url('../images/shop-item-tablet2.jpg');
 		width: 100%;
 		height: 204px;
 		background-size: cover;
@@ -177,7 +175,7 @@
 	}
 	
 	.product03__img {
-		background-image: url('/images/shop-item-tablet3.jpg');
+		background-image: url('../images/shop-item-tablet3.jpg');
 		width: 100%;
 		height: 204px;
 		background-size: cover;
