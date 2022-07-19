@@ -27,14 +27,14 @@ p:last-child {
    
 @font-face {
 	font-family: OpenSans;
-	src: url("fonts/OpenSans-Regular.woff");
+	src: url('./fonts/OpenSans-Regular.woff');
 	font-weight: 400;
 	font-style: normal;
 }
 	 
 @font-face {
 	font-family: OpenSans;
-	src: url("fonts/OpenSans-Bold.woff");
+	src: url('./fonts/OpenSans-Bold.woff');
 	font-weight: 700;
 	font-style: normal; 
 }
@@ -43,7 +43,7 @@ p:last-child {
 /* HEADER */
    
 .header-banner {
-	background-image: url("images/banner-bg.jpg");
+	background-image: url('./images/banner-bg.jpg');
 	width: 100%;
 	background-size: cover;
 	position: relative;
@@ -51,7 +51,7 @@ p:last-child {
 }
    
 .header-banner::before {
-	content: "";
+	content: '';
 	display: block;
 	background-color: rgba(0, 0, 0, 0.6);
 	position: absolute;
@@ -126,7 +126,6 @@ span.visually-hidden {
 .trends {
 	min-width: 1200px;
 	margin-top: 60px;
-	height: 377px;	
 }
 
 .trends__content {
@@ -143,7 +142,7 @@ span.visually-hidden {
 }
 
 .trend__content::after {
-	content: "";
+	content: '';
 	background-color: rgba(0, 0, 0, 0.6);
 	display: block;
 	position: absolute;
@@ -192,8 +191,8 @@ span.visually-hidden {
 	text-decoration: underline;
 }
    
-.title01 {
-	background-image: url('images/trend1.jpg');
+.title01__img {
+	background-image: url('./images/trend1.jpg');
 	width: 100%;
 	height: 319px;
 	background-size: cover;
@@ -202,8 +201,8 @@ span.visually-hidden {
 	z-index: 0;
 }
 
-.title02 {
-	background-image: url('images/trend2.jpg');
+.title02__img {
+	background-image: url('./images/trend2.jpg');
 	width: 100%;
 	height: 319px;
 	background-size: cover;
@@ -212,8 +211,8 @@ span.visually-hidden {
 	z-index: 0;
 }
 
-.title03 {
-	background-image: url('images/trend3.jpg');
+.title03__img {
+	background-image: url('./images/trend3.jpg');
 	width: 100%;
 	height: 319px;
 	background-size: cover;
@@ -222,8 +221,8 @@ span.visually-hidden {
 	z-index: 0;
 }
 
-.title04 {
-	background-image: url('images/trend4.jpg');
+.title04__img {
+	background-image: url('./images/trend4.jpg');
 	width: 100%;
 	height: 319px;
 	background-size: cover;
@@ -572,7 +571,7 @@ span.visually-hidden {
 }
 
 .product01__img {
-	background-image: url('images/shop-item-desk1.jpg');
+	background-image: url('./images/shop-item-desk1.jpg');
 	width: 100%;
 	height: 204px;
 	background-size: cover;
@@ -582,7 +581,7 @@ span.visually-hidden {
 }
 
 .product02__img {
-	background-image: url('images/shop-item-desk2.jpg');
+	background-image: url('./images/shop-item-desk2.jpg');
 	width: 100%;
 	height: 204px;
 	background-size: cover;
@@ -592,7 +591,7 @@ span.visually-hidden {
 }
 
 .product03__img {
-	background-image: url('images/shop-item-desk3.jpg');
+	background-image: url('./images/shop-item-desk3.jpg');
 	width: 100%;
 	height: 204px;
 	background-size: cover;
@@ -715,15 +714,15 @@ span.visually-hidden {
 }
    
 .dribbble {
-	background-image: url("svg/001-dribbble.svg");
+	background-image: url('./svg/001-dribbble.svg');
 }
    
 .pinterest {
-	background-image: url("svg/002-pinterest.svg");
+	background-image: url('./svg/002-pinterest.svg');
 }
    
 .tumblr {
-	background-image: url("svg/003-tumblr.svg");
+	background-image: url('./svg/003-tumblr.svg');
 }
    
 .copyrights {
@@ -736,8 +735,4 @@ span.visually-hidden {
    
 .copyrights a {
 	color: #999999;
-}
-
-@media (min-width: 641px) and (max-width: 1200px) {
-	
 }
