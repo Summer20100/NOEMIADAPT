@@ -6,13 +6,14 @@
 	<title>NOEMI</title>
 	<link rel="shortcut icon" href="icon/icon.jpg" type="image/png">
 	<link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="CSS/tablet.css">
+  <link rel="stylesheet" href="/CSS/tablet.css">
+  <link rel="stylesheet" href="/CSS/mobile.css">
 </head>
 <body>
 	<div class="all-content">
-				<header class="header">
+		<header class="header">
 			<div class="header-banner">
-				<div style="display: flex; justify-content: space-between;">
+				<div class="header-banner__content">
 					<div class="header-menu">
 						<div class="header-logo">
 							<a href="#0">
@@ -53,7 +54,7 @@
 			</div>
 		</header>
 		<div class="trends">
-			<h3 class="title" style="font-size: 20px; line-height: 29px;">сейчас в тренде</h3>
+			<h3 class="title title__section">сейчас в тренде</h3>
 			<div class="trends__content">
 				<div class="trend__content title01__img">
 					<div class="trend__title">
@@ -397,7 +398,7 @@
 			</aside>
 		</div>
 		<div class="shop">
-			<h3 class="title" style="font-size: 20px; line-height: 29px;">наши изделия</h3>
+			<h3 class="title title__section">наши изделия</h3>
 			<div class="shop__products">
 				<div class="shop__product">
 					<div class="product01__img">
@@ -438,6 +439,7 @@
 						</article>
 						<form action="#" class="shop-form">
 							<div class="price">
+                <p class="old-price"></p>
 								<p class="new-price">3500 &#8381</p>
 							</div>
 							<button class="shop-button" type="button">
