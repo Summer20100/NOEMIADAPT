@@ -1,143 +1,139 @@
 @media (max-width: 640px) {
   
-	/*   .all-content {
-		display: flex;
-		flex-direction: column;
-	  } */
+/*______________________________________*/
+/* HEADER */
+
+.header {
+	max-width: 640px;
+}
 	  
-		/*______________________________________*/
-		/* HEADER */
-	  .header {
-		max-width: 640px;
-	  }
+.header-banner {
+	background-image: url('../images/banner-mobile.jpg');
+	background-position: center;
+}
+
+.header-logo {
+	width: 270px;
+	bottom: 0;
+	align-self: center;
+}
 	  
-	  .header-banner {
-		  background-image: url('../images/banner-mobile.jpg');
-		  background-position: center;
-	  }
-	
-	
-	
-	 
-		.header-logo {
-		  width: 270px;
-	  }
-	  
-		.header-menu {
-		  padding: 30px 15px;
-		max-height: 250px;
-		}
+.header-menu {
+	flex-direction: column-reverse;	
+	height: 220px;
+}
 		 
-	  .intro {
-		  font-size: 26px;
-		  line-height: 36px;
-		  max-width: 328px;
-	  } 
+.intro {
+	font-size: 26px;
+	line-height: 36px;
+	max-width: 328px;
+	padding: 45px 0 220px;
+} 
 	  
-		.menu {
-		  width: 23px;
-		  position: relative;
-		} 
+.menu {
+	width: 23px;
+	position: relative;
+	align-self: flex-end;
+} 
 		
-		.menu__box {
-		  display: none;
-		}
+.menu__box {
+	display: none;
+}
 		
-	  .menu > span,
-	  .menu > span::before,
-	  .menu > span::after {
-		  display: block;
-		  width: 23px;
-		  height: 3px;
-		  background-color: #ffffff;
-	  }
+.menu > span,
+.menu > span::before,
+.menu > span::after {
+	display: block;
+	width: 23px;
+	height: 3px;
+	background-color: #ffffff;
+}
 		
-		.menu > span::before {
-		  content: '';
-		  top: 10px;
-		  position: absolute;
-	  }
+.menu > span::before {
+	content: '';
+	top: 10px;
+	position: absolute;
+}
 		
-	  .menu > span::after {
-		  content: '';
-		  top: -10px;
-		  position: absolute;
-	  }
+.menu > span::after {
+	content: '';
+	top: -10px;
+	position: absolute;
+}
 	   
-		/*______________________________________*/
-		/* TRENDS */
+/*______________________________________*/
+/* TRENDS */
 		
-		.trends {		
-		  max-width: 1200px;
-			margin-top: 50px;
-		}
+.trends {		
+	margin-top: 45px;
+	max-width: 640px;
+}
+
+h3.title__section {
+	font-size: 16px;
+}
 		
-		.trend__content {
-			position: relative;
-			min-width: 49%;
-			display: flex;
-		  flex: 1;
-			align-items: flex-end;
-		  height: 247px;
-		}
+.trend__content {
+	min-width: 100%;
+	height: 232px;
+}
 		
-		.trend__title h3 a {
-			font-size: 17px;
-			line-height: 22px;
-		}
-		
-		.trend__title-category ul>li {
-			font-size: 14px;
-			line-height: 37px;
-		}
-		
-		/*______________________________________*/
-		/* CONTENT */
+.trend__title h3 a {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.trend__title {
+	margin: 15px;
+	padding: 25px 20px;
+}
+
+
+/*______________________________________*/
+/* CONTENT */
 		   
-		.content {
-			padding: 50px 35px;
-		}
+.content {
+padding: 45px 15px;
+flex-direction: column;
+}
 		   
-		/* CONTENT.MAIN */
+/* CONTENT.MAIN */
 		   
-		.main {
-		display: flex;
-		flex-direction: column;
-			margin-right: 35px;
-		}
+.main {
+margin: 0 0 45px 0;
+}
 		   
-		.article {
-		  flex-direction: column;
-			margin-bottom: 40px;
-		max-width: 392px;
-		
-		}
+.article {
+flex-direction: column;
+margin-bottom: 40px;
+max-width: 640px;
+}
 	  
-		.article::after {
-		  content: '';
-		  margin-top: 20px; 
-		  width: 100%;
-		  height: 3px;
-		  background-color: #eeeeee;
-		}
+.article::after {
+content: '';
+margin-top: 20px; 
+width: 100%;
+height: 3px;
+background-color: #eeeeee;
+}
 	  
-		.article:last-child::after{
-		  display: none;
-		}
+.article:last-child::after{
+display: none;
+}
 		   
-		.article-img__banner {
-			width: 100%;
-		}
+.article-img__banner {
+width: 100%;
+}
 		   
-		.article-content__category ul>li {
-			font-size: 14px;
-		  line-height: 40px; 
-		}
+.article-content__category ul>li {
+font-size: 14px;
+line-height: 40px; 
+}
 		   
-		.article-content h3 a {
-		  font-size: 17px;
-		  line-height: 22px;
-		}
+.article-content h3 a {
+font-size: 17px;
+line-height: 22px;
+}
 	  
 		/*______________________________________*/
 		/* SHOP */
