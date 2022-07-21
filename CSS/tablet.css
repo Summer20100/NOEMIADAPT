@@ -11,6 +11,7 @@
   
 	/*______________________________________*/
 	/* HEADER */
+  
   .header {
     max-width: 1200px;
   }
@@ -46,21 +47,21 @@
   .menu > span::before,
   .menu > span::after {
 	display: block;
-	width: 23px;
-	height: 3px;
-	background-color: #ffffff;
+  	width: 23px;
+  	height: 3px;
+  	background-color: #ffffff;
   }
 	
 	.menu > span::before {
-	content: '';
-	top: 10px;
-	position: absolute;
+  	content: '';
+  	top: 10px;
+  	position: absolute;
   }
 	
   .menu > span::after {
-	content: '';
-	top: -10px;
-	position: absolute;
+  	content: '';
+  	top: -10px;
+  	position: absolute;
   }
    
 	/*______________________________________*/
@@ -145,7 +146,6 @@
 		margin: 0 auto calc(50px + 25px) auto;
     display: flex;
     flex-direction: column;
-/*     flex-wrap: wrap; */
 	}
 	
 	.shop__products {
@@ -156,7 +156,6 @@
 	}
 	
 	.shop__product {
-/* 		flex: 292px; */
     max-width: 292px;
 		position: relative;
 		display: flex;
@@ -189,5 +188,5 @@
 	.footer {
 	  margin: 0 0;
   }
-	 
-  }
+  
+}
