@@ -504,21 +504,21 @@
 
 
                     
-  <div class="popup">
+  <div class="popup _hidden">
     <div class="popup__content">
       <button type="button" class="popup__close"></button>
       <form action="#" name="popup" class="popup__form">
-        <p class="title__section"><h3>ваш фидбек</h3></p>
+        <h3 class="title__section">ваш фидбек</h3>
         <div>
-          <p>Как часто Вы заходите на сайт?</p>
-          <select type="text" class="popup__input-answer" name="unittype" required>
-            <option value="">Почти каждый день</option>
-            <option value="1">Каждый день</option>
-            <option value="2">Раз в неделю</option>
-            <option value="3">Раз в месяц</option>
-          </select>          
+			<label><p>Как часто Вы заходите на сайт?</p></lable>
+			<select type="text" class="popup__input-answer" name="unittype" required>
+			<option value="">Почти каждый день</option>
+			<option value="1">Каждый день</option>
+			<option value="2">Раз в неделю</option>
+			<option value="3">Раз в месяц</option>
+			</select>          
         </div>
-        <div>
+        <div class="mail-submit">
           <p>Вы подписаны на e-mail рассылку?</p>
           <div>
             <input id="yes" type="radio" name="choise">
@@ -528,10 +528,10 @@
           </div>
         </div> 
         <div>
-          <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-          <input type="text" placeholder="Может, больше рецептов?">
+			<label><p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p></lable>
+			<input type="text" class="popup__input-recipe" placeholder="Может, больше рецептов?">
         </div>
-        <button type="submit">отправить</button>
+        <button type="submit" class="popup__submit-button">отправить</button>
       </form>
     </div>
   </div>
