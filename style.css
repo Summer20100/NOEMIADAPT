@@ -23,6 +23,10 @@ p {
 p:last-child {
 	margin-bottom: 0;
 }
+
+button {
+  cursor: pointer;
+}
    
 @font-face {
 	font-family: OpenSans;
@@ -747,33 +751,8 @@ h4.title {
 	color: #999999;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*______________________________________*/
+/* POPUP */
 
 .all-content {
   display: none;
@@ -782,7 +761,6 @@ h4.title {
 ._hidden {
 	visibility: visible;
 }
-
 
 .popup {
 	height: 100vh;
@@ -809,6 +787,7 @@ h4.title {
 	height: 589px;
 	padding: 55px 30px;
 	background-color: #ffffff;
+	position: relative;
 
 	font-size: 13px;
 	color: #000000;
@@ -817,14 +796,22 @@ h4.title {
 	flex-direction: column;
 }
 
-
-
-
-
-
+.popup__close {
+	background-image: url('svg/form-x.svg');
+	background-color: transparent;
+	border: none;
+  
+	width: 27px;
+	height: 27px;
+  
+	position: absolute;
+	top: -32px;
+	right: 0;
+}
 
 .popup__input-answer,
 .popup__input-recipe {
+	position: relative;
 	width: 100%;
 	height: 48px;
 	
@@ -845,12 +832,74 @@ h4.title {
 
 .popup__input-recipe {
 	height: 131px;
-	text-align: start;
+  	padding-bottom: 80px;
 }
- 
-.mail-submit {
+
+.popup__input-answer {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+
+	background-image: url('svg/form-arrows.svg');
+	background-repeat: no-repeat;
+	background-position: right 15px center;
+	background-size: 8px;
+}
+
+
+
+
+
+
+
+.form__mail {
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 20px;
 }
+
+.form__choise {
+	display: flex;
+	gap: 55px;
+
+	position: relative;
+}
+
+.form__radio label span::before {
+	content: '';
+	display: inline-block;
+	height: 17px;
+	width: 17px;
+
+	background-image: url('svg/form-empty-circle.svg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 15px;
+
+	position: absolute;
+
+	margin-left: 40px;
+
+}
+
+.form__radio label span {
+	position: relative;
+}
+
+/*.form__radio label span {
+	margin-left: 20px;
+}*/
+ 
+/*.form__radio input[type=radio] {
+	display: none;
+}*/
+
+
+.form__radio input[type=radio]:checked + label::before {
+	background-image: url('svg/form-circle.svg');
+}
+
+
 
 
 
@@ -869,7 +918,3 @@ h4.title {
 .popup__submit-button:hover {
 	background-color: #323232;
 }
-
-
-
-
