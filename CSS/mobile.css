@@ -269,3 +269,11 @@
 	}
 	
 }
+
+@media (orientation: landscape) and (max-width: 640px) {
+				
+	.trend__content {
+		min-width: 49%;
+	}
+	
+}
