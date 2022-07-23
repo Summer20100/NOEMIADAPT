@@ -521,63 +521,46 @@
         <a href="#0">Copyright &copy; 2009–2019 City Blog LLC.</a>
       </div>
     </footer>
+    <div class="popup _hidden">
+      <div class="popup__content">
+        <button type="button" class="popup__close"></button>
+        <form action="#" name="popup" class="popup__form">
+          <h3 class="title__section">ваш фидбек</h3>
+          <div class="form-visit">
+            <label class="lable__select">
+            <p>Как часто Вы заходите на сайт?</p>
+              <select class="popup__input-answer" name="format" id="format">
+                <option value="01" selected>Почти каждый день</option>
+                <option value="02">Каждый день</option>
+                <option value="03">Раз в неделю</option>
+                <option value="04">Раз в месяц</option>
+              </select>
+            </label>
+          </div>
+          <div class="form__mail">
+            <p>Вы подписаны на e-mail рассылку?</p>
+            <div class="form__choise">
+              <div class="form__radio">
+                <input id="yes" type="radio" name="choise" checked>
+                <label for="yes">Да</label>
+              </div>
+              <div class="form__radio">
+                <input id="no" type="radio" name="choise">
+                <label for="no">Нет</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label>
+              <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+              <input type="text" class="popup__input-recipe" placeholder="Может, больше рецептов?">
+            </lable>
+          </div>
+          <button type="submit" class="popup__submit-button">отправить</button>
+        </form>
+      </div>
+    </div>
   </div>
-
-
-
-	<div class="popup _hidden">
-		<div class="popup__content">
-			<button type="button" class="popup__close"></button>
-			<form action="#" name="popup" class="popup__form">
-				<h3 class="title__section">ваш фидбек</h3>
-				<div class="form-visit">
-					<label class="lable__select">
-					<p>Как часто Вы заходите на сайт?</p>
-						<select class="popup__input-answer" name="format" id="format">
-							<option value="01" selected>Почти каждый день</option>
-							<option value="02">Каждый день</option>
-							<option value="03">Раз в неделю</option>
-							<option value="04">Раз в месяц</option>
-						</select>
-					</label>
-				</div>
-
-
-
-
-				<div class="form__mail">
-					<p>Вы подписаны на e-mail рассылку?</p>
-					<div class="form__choise">
-						<div class="form__radio">
-							<label for="yes">
-								<input id="yes" type="radio" name="choise" checked>
-								<span>Да</span>
-							</label>
-						</div>
-						<div class="form__radio">
-							<label for="no">
-								<input id="no" type="radio" name="choise">
-								<span>Нет</span>
-							</label>
-						</div>
-					</div>
-				</div>
-
-
-				<div>
-					<label>
-						<p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-						<input type="text" class="popup__input-recipe" placeholder="Может, больше рецептов?">
-					</lable>
-				</div>
-				<button type="submit" class="popup__submit-button">отправить</button>
-      		</form>
-    	</div>
-  	</div>
-
-
-
-
 </body>
 
 </html>
