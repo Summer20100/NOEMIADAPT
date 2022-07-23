@@ -755,20 +755,20 @@ h4.title {
 /* POPUP */
 
 .all-content {
-  display: none;
-}
-
-._hidden {
-	visibility: visible;
+	position: relative;
 }
 
 .popup {
+	top: 0;
 	height: 100vh;
 	width: 100vw;
-	position: relative;
+	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 2;
+
+	/*visibility: hidden;*/
 }
 
 .popup::after {
@@ -846,12 +846,6 @@ h4.title {
 	background-size: 8px;
 }
 
-
-
-
-
-
-
 .form__mail {
 	display: flex;
 	flex-direction: column;
@@ -865,7 +859,7 @@ h4.title {
 	position: relative;
 }
 
-.form__radio label span::before {
+.form__radio label::before {
 	content: '';
 	display: inline-block;
 	height: 17px;
@@ -877,31 +871,27 @@ h4.title {
 	background-size: 15px;
 
 	position: absolute;
-
-	margin-left: 40px;
+	left: 0;
 
 }
 
-.form__radio label span {
+.form__radio{
+	display: flex;
 	position: relative;
 }
 
-/*.form__radio label span {
-	margin-left: 20px;
-}*/
+.form__radio label {
+	margin-left: 25px;
+}
  
-/*.form__radio input[type=radio] {
+.form__radio input[type=radio] {
 	display: none;
-}*/
+}
 
 
 .form__radio input[type=radio]:checked + label::before {
 	background-image: url('svg/form-circle.svg');
 }
-
-
-
-
 
 .popup__submit-button {
 	width: 100%;
