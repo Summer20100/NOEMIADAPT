@@ -238,5 +238,34 @@
 	.copyrights {
 	  margin-bottom: 50px;
 	}
+
+	/*______________________________________*/
+	/* POPUP */
+
+	.popup__content {
+		width: 331px;
+		height: 546px;
+		padding: 30px 25px;
+	}
+
+	.form__radio label::before {
+		width: 27px;
+		height: 27px;		
+		background-size: 25px;
+		top: -3px;
+	}
+
+	.form__radio{
+		display: flex;
+		position: relative;
+	}
+
+	.form__radio label {
+		margin-left: 32px;
+	}
 	
-  }
+	.form__mail {
+		margin-bottom: 35px;
+	}
+	
+}
