@@ -768,7 +768,7 @@ h4.title {
 	align-items: center;
 	z-index: 2;
 
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 
 .popup::after {
@@ -807,6 +807,11 @@ h4.title {
 	position: absolute;
 	top: -32px;
 	right: 0;
+}
+
+.popup__form {
+	display: flex;
+	flex-direction: column;
 }
 
 .popup__input-answer,
@@ -872,7 +877,6 @@ h4.title {
 
 	position: absolute;
 	left: 0;
-
 }
 
 .form__radio{
