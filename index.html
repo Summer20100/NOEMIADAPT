@@ -534,7 +534,7 @@
           <div class="form-visit">
             <label class="lable__select">
             <p>Как часто Вы заходите на сайт?</p>
-              <select class="popup__input-answer" name="format" id="format">
+              <select class="popup__input-answer" name="format" id="format" tabindex="1">
                 <option value="01" selected>Почти каждый день</option>
                 <option value="02">Каждый день</option>
                 <option value="03">Раз в неделю</option>
@@ -545,11 +545,11 @@
           <div class="form__mail">
             <p>Вы подписаны на e-mail рассылку?</p>
             <div class="form__choise">
-              <div class="form__radio">
+              <div class="form__radio" tabindex="2">
                 <input id="yes" type="radio" name="choise" checked>
                 <label for="yes">Да</label>
               </div>
-              <div class="form__radio">
+              <div class="form__radio" tabindex="3">
                 <input id="no" type="radio" name="choise">
                 <label for="no">Нет</label>
               </div>
@@ -558,10 +558,10 @@
           <div>
             <label>
               <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-              <input type="text" class="popup__input-recipe" placeholder="Может, больше рецептов?">
+              <input type="text" class="popup__input-recipe" placeholder="Может, больше рецептов?" tabindex="4">
             </lable>
           </div>
-          <button type="submit" class="popup__submit-button">отправить</button>
+          <button type="submit" class="popup__submit-button" tabindex="5">отправить</button>
         </form>
       </div>
     </popup>
