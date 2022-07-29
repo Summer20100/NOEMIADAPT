@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NOEMI</title>
   <link rel="shortcut icon" href="icon/icon.jpg" type="image/png">
@@ -48,7 +48,11 @@
               </a>
             </div>
             <div class="menu">
-              <span></span>
+              <button class="menu__burger" type="button">
+                <span></span>
+              </button>
+
+
               <ul class="menu__box">
                 <li><a href="#0">Главная</a></li>
                 <li><a href="#0">Посты</a></li>
@@ -421,22 +425,32 @@
       <h3 class="title__section">наши изделия</h3>
       <div class="shop__products">
         <div class="shop__product">
-          <div class="product01__img">
-            <!-- <picture>
-              <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
-              <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+          <div class="product__img">
+            
+<!--        <img srcset="
+              images/shop-item-mobile1.jpg 285w, 
+              images/shop-item-tablet1.jpg 292w, 
+              images/shop-item-desk1.jpg 300w" sizes="
+              (min-width: 641px) 292px, 
+              (min-width: 1200px) 300px, 
+              285px" src="images/shop-item-desk1.jpg" alt="Подушки на диван" width="100%" height="100%"
+            > -->
+
+            <picture>
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+              <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
               <img src="images/shop-item-desk1.jpg" alt="Подушки на диван">
-            </picture>-->
+            </picture>
           </div>
           <div class="product__title">
             <header class="product__header">
-              <span>Подушки на диван</span>
+              <h3>Подушки на диван</h3>
             </header>
-            <article class="product__text">
+            <div class="product__text">
               <p>
                 Набор из двух подушек с модными принтами. Видео о создании <a href="#0">здесь</a>.
               </p>
-            </article>
+            </div>
             <form action="#" class="shop-form">
               <div class="price">
                 <p class="old-price">1000 &#8381</p>
@@ -449,19 +463,24 @@
           </div>
         </div>
         <div class="shop__product">
-          <div class="product02__img">
+          <div class="product__img">
+            <picture>
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+              <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+              <img src="images/shop-item-desk2.jpg" alt="Кукла «Зайчик»">
+            </picture>
           </div>
           <div class="product__title">
             <header class="product__header">
-              <span>Кукла «Зайчик»</span>
+              <h3>Кукла «Зайчик»</h3>
             </header>
-            <article class="product__text">
+            <div class="product__text">
               <p>
                 Интерьерная рукодельная кукла «Зайчик», созданию которой
                 посвящена <a href="#0">весенняя серия постов</a>
                 в блоге и несколько подкастов.
               </p>
-            </article>
+            </div>
             <form action="#" class="shop-form">
               <div class="price">
                 <p class="old-price"></p>
@@ -474,18 +493,23 @@
           </div>
         </div>
         <div class="shop__product">
-          <div class="product03__img">
+          <div class="product__img">
+            <picture>
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+              <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
+              <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+            </picture>
           </div>
           <div class="product__title">
             <header class="product__header">
-              <span>Шестиугольная рамка</span>
+              <h3>Шестиугольная рамка</h3>
             </header>
-            <article class="product__text">
+            <div class="product__text">
               <p>
                 Необычная рамка для украшения дома из видео <a href="#0">«Как сделать рамку из подручных средств за 30
                   минут»</a>
               </p>
-            </article>
+            </div>
             <form action="#" class="shop-form">
               <div class="price">
                 <p class="old-price">500 &#8381</p>
@@ -533,7 +557,7 @@
           <h3 class="title__section">ваш фидбек</h3>
           <div class="form-visit">
             <label class="lable__select">
-            <p>Как часто Вы заходите на сайт?</p>
+              <p>Как часто Вы заходите на сайт?</p>
               <select class="popup__input-answer" name="format" id="format" tabindex="1">
                 <option value="01" selected>Почти каждый день</option>
                 <option value="02">Каждый день</option>
@@ -556,10 +580,11 @@
             </div>
           </div>
           <div>
-            <label>
+            <label for="comments">
               <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-              <input type="text" class="popup__input-recipe" placeholder="Может, больше рецептов?" tabindex="4">
-            </lable>
+            </label>
+            <textarea name="comments" id="comments" placeholder="Может, больше рецептов?" class="popup__input-recipe"
+              tabindex="4"></textarea>
           </div>
           <button type="submit" class="popup__submit-button" tabindex="5">отправить</button>
         </form>
@@ -567,4 +592,5 @@
     </popup>
   </div>
 </body>
+
 </html>
