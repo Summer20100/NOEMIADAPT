@@ -20,10 +20,6 @@ p {
 	margin-bottom: 0.7rem;
 }
    
-p:last-child {
-	margin-bottom: 0;
-}
-
 button {
   cursor: pointer;
 }
@@ -77,6 +73,10 @@ button {
 	display: flex;
 	justify-content: space-between;
 	margin: 28px auto; 
+}
+
+button.menu__burger {
+  display: none;
 }
    
 .header-logo {
@@ -211,6 +211,7 @@ h3.title__section {
 	background-image: url('../images/trend1.jpg');
 	width: 100%;
 	height: 319px;
+  background-color: #f4f7f6;
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -221,6 +222,7 @@ h3.title__section {
 	background-image: url('../images/trend2.jpg');
 	width: 100%;
 	height: 319px;
+  background-color: #f4f7f6;
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -231,6 +233,7 @@ h3.title__section {
 	background-image: url('../images/trend3.jpg');
 	width: 100%;
 	height: 319px;
+  background-color: #f4f7f6;
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -241,6 +244,7 @@ h3.title__section {
 	background-image: url('../images/trend4.jpg');
 	width: 100%;
 	height: 319px;
+  background-color: #f4f7f6;
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -250,7 +254,7 @@ h3.title__section {
 /*______________________________________*/
 /* CONTENT */
    
-   .content {
+.content {
 	max-width: 1200px;
 	display: flex;
 	margin: 0 auto;
@@ -278,6 +282,7 @@ h3.title__section {
 	-o-object-fit: cover;
 	   object-fit: cover;
 	width: 380px;
+  background-color: #f4f7f6;
 }
  
 .article-content__category ul>li {
@@ -582,33 +587,16 @@ h4.title {
 	flex-direction: column;
 }
 
-.product01__img {
-	background-image: url('../images/shop-item-desk1.jpg');
-	max-width: 100%;
+.product__img img {
+  width: 100%;
 	height: 204px;
-	background-size: cover;
-	background-position: center;
+  background-color: #f4f7f6;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 	position: relative;
 	z-index: 0;
-}
-
-.product02__img {
-	background-image: url('../images/shop-item-desk2.jpg');
-	max-width: 100%;
-	height: 204px;
-	background-size: cover;
-	background-position: center;
-	position: relative;
-	z-index: 0;
-}
-
-.product03__img {
-	background-image: url('../images/shop-item-desk3.jpg');
-	max-width: 100%;
-	height: 204px;
-	background-size: cover;
-	background-position: center;
-	position: relative;
 }
 
 .product__title {
@@ -619,7 +607,7 @@ h4.title {
 	z-index: 1;
 }
 
-.product__header {
+.product__header h3 {
 	text-transform: uppercase;
 	font-size: 20px;
 	line-height: 24px;
@@ -784,7 +772,6 @@ h4.title {
 
 .popup__content {
 	width: 390px;
-	height: 589px;
 	padding: 55px 30px;
 	background-color: #ffffff;
 	position: relative;
@@ -824,20 +811,25 @@ h4.title {
 	border: none;
 
 	background-color: #f4f7f6;
-	padding: 0 16px;
 	border-radius: none;
 	margin-bottom: 20px;
+}
+
+.popup__input-answer {
+	height: 48px;
+  padding: 0 16px;
+}
+
+.popup__input-recipe {
+	height: 131px;
+  line-height: 16px;
+  padding: 16px;
 }
    
 .popup__input-answer:focus,
 .popup__input-recipe:focus {
 	outline: 1px solid #b59f5b;
 	outline-offset: -2px;
-}
-
-.popup__input-recipe {
-	height: 131px;
-  	padding-bottom: 80px;
 }
 
 .popup__input-answer {
