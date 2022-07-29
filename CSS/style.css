@@ -21,7 +21,7 @@ p {
 }
    
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
    
 @font-face {
@@ -62,8 +62,8 @@ button {
 }
 
 .header-banner__content {
-  display: flex; 
-  justify-content: space-between;
+	display: flex; 
+	justify-content: space-between;
 }
    
 .header-menu {
@@ -76,7 +76,7 @@ button {
 }
 
 button.menu__burger {
-  display: none;
+	display: none;
 }
    
 .header-logo {
@@ -211,7 +211,7 @@ h3.title__section {
 	background-image: url('../images/trend1.jpg');
 	width: 100%;
 	height: 319px;
-  background-color: #f4f7f6;
+	background-color: #f4f7f6;
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -222,7 +222,7 @@ h3.title__section {
 	background-image: url('../images/trend2.jpg');
 	width: 100%;
 	height: 319px;
-  background-color: #f4f7f6;
+	background-color: #f4f7f6;
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -233,7 +233,7 @@ h3.title__section {
 	background-image: url('../images/trend3.jpg');
 	width: 100%;
 	height: 319px;
-  background-color: #f4f7f6;
+	background-color: #f4f7f6;
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -244,7 +244,7 @@ h3.title__section {
 	background-image: url('../images/trend4.jpg');
 	width: 100%;
 	height: 319px;
-  background-color: #f4f7f6;
+	background-color: #f4f7f6;
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -271,7 +271,7 @@ h3.title__section {
 .article {
 	display: flex;
 	margin-bottom: 57px;
-  gap: 30px;
+	gap: 30px;
 }
    
 .article:last-child {
@@ -282,7 +282,7 @@ h3.title__section {
 	-o-object-fit: cover;
 	   object-fit: cover;
 	width: 380px;
-  background-color: #f4f7f6;
+	background-color: #f4f7f6;
 }
  
 .article-content__category ul>li {
@@ -391,10 +391,10 @@ h4.title {
 }
    
 .posts-latestposts__img {
-  -o-object-position: left top;
-     object-position: left top;
-  -o-object-fit: cover;
-     object-fit: cover;
+	-o-object-position: left top;
+		object-position: left top;
+	-o-object-fit: cover;
+		object-fit: cover;
 	width: 70px;
 	height: 70px;
 }
@@ -588,13 +588,13 @@ h4.title {
 }
 
 .product__img img {
-  width: 100%;
+	width: 100%;
 	height: 204px;
-  background-color: #f4f7f6;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+	background-color: #f4f7f6;
+	-o-object-fit: cover;
+		object-fit: cover;
+	-o-object-position: top;
+		object-position: top;
 	position: relative;
 	z-index: 0;
 }
@@ -639,12 +639,12 @@ h4.title {
 
 .price {
 	margin: auto 10px auto 0;
-  flex-shrink: 0;
+	flex-shrink: 0;
 }
 
 .price p {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 .old-price {
@@ -805,7 +805,6 @@ h4.title {
 .popup__input-recipe {
 	position: relative;
 	width: 100%;
-	height: 48px;
 	
 	line-height: 40px;
 	border: none;
@@ -817,13 +816,13 @@ h4.title {
 
 .popup__input-answer {
 	height: 48px;
-  padding: 0 16px;
+	padding: 0 16px;
 }
 
 .popup__input-recipe {
 	height: 131px;
-  line-height: 16px;
-  padding: 16px;
+	line-height: 16px;
+	padding: 16px;
 }
    
 .popup__input-answer:focus,
