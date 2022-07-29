@@ -38,35 +38,35 @@
 		display: none;
 	}
 
-  button.menu__burger {
-    display: block;
-    width: 23px;
-    height: 23px;
-    border: none;
-    background-color: transparent;
-    position: relative;
-  }
+	button.menu__burger {
+		display: block;
+		width: 23px;
+		height: 23px;
+		border: none;
+		background-color: transparent;
+		position: relative;
+	}
   
-  .menu__burger > span,
-  .menu__burger > span::before,
-  .menu__burger > span::after {
-	  display: block;
-    width: 100%;
-  	height: 3px;
-  	background-color: #ffffff;
-  }
+	.menu__burger > span,
+	.menu__burger > span::before,
+	.menu__burger > span::after {
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: #ffffff;
+	}
 	
 	.menu__burger > span::before {
-  	content: '';
-  	top: 0;
-  	position: absolute;
-  }
+		content: '';
+		top: 0;
+		position: absolute;
+	}
 	
-  .menu__burger > span::after {
-  	content: '';
-  	bottom: 0;
-  	position: absolute;
-  }
+	.menu__burger > span::after {
+		content: '';
+		bottom: 0;
+		position: absolute;
+	}
 		   
 	/*______________________________________*/
 	/* TRENDS */
@@ -100,69 +100,69 @@
 	/* CONTENT */
 			   
 	.content {
-	  padding: 45px 15px;
-	  flex-direction: column;
+		padding: 45px 15px;
+		flex-direction: column;
 	}
 			   
 	/* CONTENT.MAIN */
 			   
 	.main {
-	  margin: 0 0 45px 0;
+		margin: 0 0 45px 0;
 	}
 			   
 	.article {
-	  flex-direction: column;
-	  gap: 0;
-	  margin-bottom: 35px;
+		flex-direction: column;
+		gap: 0;
+		margin-bottom: 35px;
 	}
 		  
 	.article::after {
-	  content: '';
-	  margin-top: 20px; 
-	  width: 100%;
-	  height: 3px;
-	  background-color: #eeeeee;
+		content: '';
+		margin-top: 20px; 
+		width: 100%;
+		height: 3px;
+		background-color: #eeeeee;
 	}
 			   
 	.article-img__banner {
-	  width: 100%;
+		width: 100%;
 	}
 			   
 	.article-content__category ul>li {
-	  font-size: 14px;
-	  line-height: 40px; 
+		font-size: 14px;
+		line-height: 40px; 
 	}
 			   
 	.article-content h3 a {
-	  font-size: 16px;
-	  line-height: 20px;
-	  margin: 0 0 5px 0;
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 5px 0;
 	}
 	
 	.article-content__datatime,
 	.article-content__author {
-	  line-height: 40px;
+		line-height: 40px;
 	}
 	
 	.article-content__text {
-	  margin-top: 0;
-	  font-size: 14px;
-	  line-height: 20px;
+		margin-top: 0;
+		font-size: 14px;
+		line-height: 20px;
 	}
 	
 	/* CONTENT.ASIDE */  
 	   
 	.aside {
-	  display: flex;
-	  flex-direction: column;
+		display: flex;
+		flex-direction: column;
 		width: 100%;
 	}
 	   
 	/* CONTENT.ASIDE.POSTS-LATESPOSTS */
 	   
 	h4.title {
-	  font-size: 16px;
-	  line-height: 29px;
+		font-size: 16px;
+		line-height: 29px;
 	}
 	   
 	.posts-latestposts__banner {
@@ -184,20 +184,20 @@
 	}
 	   
 	.posts-latestposts__img {
-	  -o-object-position: left top;
-	     object-position: left top;
-	  -o-object-fit: cover;
-	     object-fit: cover;
-	  max-width: 70px;
+		-o-object-position: left top;
+			object-position: left top;
+		-o-object-fit: cover;
+			object-fit: cover;
+		max-width: 70px;
 	}
 	   
 	.posts-latestposts__text {
-	display: flex;
-	flex-direction: column;
+		display: flex;
+		flex-direction: column;
 	}
 	   
 	.posts-latestposts__data {
-	margin: -5 0 5px 0;
+		margin: -5 0 5px 0;
 	}
 	   
 	/* CONTENT.ASIDE.POSTS-SEARCH, TEXT, TAGS, CATEGORIES */
@@ -210,34 +210,34 @@
 	}
 	
 	 .field-search {
-	   flex: 1;
+		flex: 1;
 	 }
 	 
 	/*______________________________________*/
 	/* SHOP */
 
-  .shop__products {
-    justify-content: center;
-}
-		
+	.shop__products {
+		justify-content: center;
+	}
+			
 	.shop__product {
-    flex: 0 1 285px;
+		flex: 0 1 285px;
 	}
 			
 	.product__img img {
-    -o-object-position: top;
-       object-position: top;
-	  height: 285px;
+		-o-object-position: top;
+			object-position: top;
+		height: 285px;
 	}
 			
 	/*______________________________________*/
 	/* FOOOTER */
 	.social {
-	  margin-bottom: 50px;
+		margin-bottom: 50px;
 	}
 	
 	.copyrights {
-	  margin-bottom: 50px;
+		margin-bottom: 50px;
 	}
 
 	/*______________________________________*/
