@@ -31,35 +31,42 @@
 	} 
 		  
 	.menu {
-		width: 23px;
-		position: relative;
 		align-self: flex-end;
 	} 
 			
 	.menu__box {
 		display: none;
 	}
-			
-	.menu > span,
-	.menu > span::before,
-	.menu > span::after {
-		display: block;
-		width: 23px;
-		height: 3px;
-		background-color: #ffffff;
-	}
-			
-	.menu > span::before {
-		content: '';
-		top: 10px;
-		position: absolute;
-	}
-			
-	.menu > span::after {
-		content: '';
-		top: -10px;
-		position: absolute;
-	}
+
+  button.menu__burger {
+    display: block;
+    width: 23px;
+    height: 23px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .menu__burger > span,
+  .menu__burger > span::before,
+  .menu__burger > span::after {
+	  display: block;
+    width: 100%;
+  	height: 3px;
+  	background-color: #ffffff;
+  }
+	
+	.menu__burger > span::before {
+  	content: '';
+  	top: 0;
+  	position: absolute;
+  }
+	
+  .menu__burger > span::after {
+  	content: '';
+  	bottom: 0;
+  	position: absolute;
+  }
 		   
 	/*______________________________________*/
 	/* TRENDS */
@@ -208,24 +215,18 @@
 	 
 	/*______________________________________*/
 	/* SHOP */
-			
+
+  .shop__products {
+    justify-content: center;
+}
 		
 	.shop__product {
-	  max-width: 285px;
+    flex: 0 1 285px;
 	}
 			
-	.product01__img {
-	  background-image: url('../images/shop-item-mobile1.jpg');
-	  height: 285px;
-	}
-			
-	.product02__img {
-	  background-image: url('../images//shop-item-mobile2.jpg');
-	  height: 285px;
-	}
-			
-	.product03__img {
-	  background-image: url('../images//shop-item-mobile3.jpg');
+	.product__img img {
+    -o-object-position: top;
+       object-position: top;
 	  height: 285px;
 	}
 			
@@ -244,7 +245,6 @@
 
 	.popup__content {
 		width: 331px;
-		height: 546px;
 		padding: 30px 25px;
 	}
 
